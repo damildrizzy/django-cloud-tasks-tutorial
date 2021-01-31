@@ -16,5 +16,5 @@ def task_view(request):
 
 def create_task(request):
     task = "Test Task"
-    send_task(url="_/task/", payload=task)
+    send_task(url="/task/", payload=task)
     return JsonResponse({'message': "task started"})
